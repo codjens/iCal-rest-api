@@ -20,7 +20,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(App\Events::class, function (Faker\Generator $faker) {
+$factory->define(App\Event::class, function (Faker\Generator $faker) {
     $startTime = Carbon::createFromTimeStamp($faker->dateTimeBetween('now', '+1 month')->getTimestamp());
     return [
         'name' => $faker->word,

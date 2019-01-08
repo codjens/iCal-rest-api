@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Events;
+use App\Event;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +13,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call('UsersTableSeeder');
-        factory(Events::class, 10)->create();
+        factory(Event::class, 10)->create();
     }
 }
